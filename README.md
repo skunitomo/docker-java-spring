@@ -23,3 +23,17 @@ docker container run -it openjdk:14-jdk-alpine /bin/ash
 ```sh
 docker rm $(docker ps -aq)
 ```
+
+## jenv
+
+### check installed java
+
+```sh
+/usr/libexec/java_home -V
+```
+
+### add java version to jenv
+
+```sh
+jenv add /Library/Java/JavaVirtualMachines/openjdk-13.0.2.jdk/Contents/Home
+```
